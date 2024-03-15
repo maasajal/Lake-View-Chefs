@@ -1,6 +1,23 @@
+import { useEffect, useState } from "react";
 import Recipe from "../Recipe/Recipe";
 
 const Recipes = () => {
+  const [recipes, setRecipes] = useState([]);
+  //   useEffect(() => {
+  //     fetch("recipes.json")
+  //       .then((res) => res.json())
+  //       .then((data) => {
+  //         console.log(data);
+  //       });
+  //   }, []);
+  useEffect(() => {
+    const recipesData = async () => {
+      const response = await fetch("recipes.json");
+      const data = await response.json();
+      console.log(data);
+    };
+    recipesData();
+  }, []);
   return (
     <>
       <div className="text-center mt-28">

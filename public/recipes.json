@@ -1,0 +1,142 @@
+[
+  {
+    "recipe_image": "image1.jpg",
+    "recipe_id": 1,
+    "recipe_name": "Spicy Chicken Stir-Fry",
+    "short_description": "A flavorful and quick stir-fry with chicken, vegetables, and spicy sauce.",
+    "ingredients_in_an_array": [
+      "550 g chicken",
+      "120 ml soy sauce",
+      "200 g basil leaf",
+      "400 g mushroom"
+    ],
+    "preparing_time": "30 min",
+    "calories": "320 calories"
+  },
+  {
+    "recipe_image": "image2.jpg",
+    "recipe_id": 2,
+    "recipe_name": "Vegetable Pasta Salad",
+    "short_description": "A refreshing pasta salad packed with colorful vegetables and tangy dressing.",
+    "ingredients_in_an_array": [
+      "250 g pasta",
+      "1 bell pepper",
+      "1 cucumber",
+      "100 g cherry tomatoes"
+    ],
+    "preparing_time": "20 min",
+    "calories": "180 calories"
+  },
+  {
+    "recipe_image": "image3.jpg",
+    "recipe_id": 3,
+    "recipe_name": "Grilled Salmon with Lemon Herb Sauce",
+    "short_description": "Juicy grilled salmon fillets served with a zesty lemon herb sauce.",
+    "ingredients_in_an_array": [
+      "4 salmon fillets",
+      "2 lemons",
+      "1 bunch fresh parsley",
+      "4 cloves garlic"
+    ],
+    "preparing_time": "25 min",
+    "calories": "250 calories"
+  },
+  {
+    "recipe_image": "image4.jpg",
+    "recipe_id": 4,
+    "recipe_name": "Mango Avocado Salsa",
+    "short_description": "A vibrant salsa made with fresh mangoes, avocados, and tangy lime juice.",
+    "ingredients_in_an_array": [
+      "2 ripe mangoes",
+      "2 avocados",
+      "1 red onion",
+      "1 lime"
+    ],
+    "preparing_time": "15 min",
+    "calories": "120 calories"
+  },
+  {
+    "recipe_image": "image5.jpg",
+    "recipe_id": 5,
+    "recipe_name": "Classic Beef Burger",
+    "short_description": "A juicy beef patty served in a soft bun with cheese, lettuce, and tomato.",
+    "ingredients_in_an_array": [
+      "500 g ground beef",
+      "4 burger buns",
+      "4 slices cheese",
+      "Lettuce, tomato, onion"
+    ],
+    "preparing_time": "35 min",
+    "calories": "450 calories"
+  },
+  {
+    "recipe_image": "image6.jpg",
+    "recipe_id": 6,
+    "recipe_name": "Creamy Mushroom Risotto",
+    "short_description": "A rich and creamy risotto made with Arborio rice and flavorful mushrooms.",
+    "ingredients_in_an_array": [
+      "300 g Arborio rice",
+      "500 g mushrooms",
+      "1 onion",
+      "1 liter vegetable broth"
+    ],
+    "preparing_time": "40 min",
+    "calories": "380 calories"
+  },
+  {
+    "recipe_image": "image7.jpg",
+    "recipe_id": 7,
+    "recipe_name": "Caprese Salad",
+    "short_description": "A simple and elegant salad with fresh mozzarella, tomatoes, and basil.",
+    "ingredients_in_an_array": [
+      "250 g fresh mozzarella",
+      "2 large tomatoes",
+      "1 bunch fresh basil",
+      "Balsamic glaze"
+    ],
+    "preparing_time": "10 min",
+    "calories": "200 calories"
+  },
+  {
+    "recipe_image": "image8.jpg",
+    "recipe_id": 8,
+    "recipe_name": "Lemon Garlic Shrimp",
+    "short_description": "Tender shrimp cooked in a tangy lemon garlic sauce with butter and herbs.",
+    "ingredients_in_an_array": [
+      "500 g shrimp",
+      "4 cloves garlic",
+      "2 lemons",
+      "50 g butter"
+    ],
+    "preparing_time": "20 min",
+    "calories": "280 calories"
+  },
+  {
+    "recipe_image": "image9.jpg",
+    "recipe_id": 9,
+    "recipe_name": "Vegetarian Quinoa Chili",
+    "short_description": "A hearty and nutritious chili made with quinoa, beans, and vegetables.",
+    "ingredients_in_an_array": [
+      "1 cup quinoa",
+      "2 cans black beans",
+      "2 cans diced tomatoes",
+      "1 bell pepper"
+    ],
+    "preparing_time": "30 min",
+    "calories": "220 calories"
+  },
+  {
+    "recipe_image": "image10.jpg",
+    "recipe_id": 10,
+    "recipe_name": "Homemade Pizza",
+    "short_description": "Delicious homemade pizza with your choice of toppings and gooey melted cheese.",
+    "ingredients_in_an_array": [
+      "Pizza dough",
+      "Tomato sauce",
+      "Cheese",
+      "Assorted toppings"
+    ],
+    "preparing_time": "45 min",
+    "calories": "350 calories"
+  }
+]
