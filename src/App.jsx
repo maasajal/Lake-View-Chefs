@@ -9,7 +9,7 @@ const App = () => {
       <header className="container mx-auto">
         <Header></Header>
       </header>
-      <main className="container mx-auto">
+      <main className="container mx-auto px-4 md:px-0">
         <Banner></Banner>
         <Recipes></Recipes>
       </main>

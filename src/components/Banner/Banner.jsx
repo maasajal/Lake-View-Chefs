@@ -1,12 +1,11 @@
+const bannerImage = "./images/banner.jpg";
 const Banner = () => {
   return (
     <>
       <div
         className="hero rounded-3xl"
         style={{
-          backgroundImage:
-            // "url(../../assets/images/banner.jpg)",
-            "url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)",
+          backgroundImage: `url(${bannerImage})`,
         }}
       >
         <div className="hero-overlay bg-opacity-60 rounded-3xl"></div>
