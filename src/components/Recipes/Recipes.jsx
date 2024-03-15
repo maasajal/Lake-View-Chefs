@@ -12,9 +12,9 @@ const Recipes = () => {
   //   }, []);
   useEffect(() => {
     const recipesData = async () => {
-      const response = await fetch("recipes.json");
+      const response = await fetch("./recipes.json");
       const data = await response.json();
-      console.log(data);
+      setRecipes(data);
     };
     recipesData();
   }, []);
@@ -28,9 +28,13 @@ const Recipes = () => {
           well world-class Programmer.
         </p>
       </div>
-      <section className="grid grid-cols-3">
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         <div className="col-span-2">
-          <Recipe></Recipe>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {recipes.map((recipe) => (
+              <Recipe recipe={recipe}></Recipe>
+            ))}
+          </div>
         </div>
         <div className="col-span-1"></div>
       </section>
