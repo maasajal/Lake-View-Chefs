@@ -7,6 +7,7 @@ import WantToCook from "./components/WantToCook/WantToCook";
 
 const App = () => {
   const [wantToCook, setWantToCook] = useState([]);
+
   const handleWantToCook = (recipe) => {
     const newCookItem = [...wantToCook, recipe];
     setWantToCook(newCookItem);
