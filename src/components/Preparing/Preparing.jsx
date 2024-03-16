@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
-const WantToCook = ({ wantToCook, handlePreparing }) => {
+const Preparing = ({ preparing }) => {
   return (
     <>
-      <h3 className="text-2xl font-semibold text-center border-b-2 pb-4 w-8/12 mx-auto">
-        Want to cook: <span>{wantToCook.length}</span>
+      <h3 className="text-2xl font-semibold text-center border-b-2 pb-4 w-8/12 mx-auto mt-4">
+        Currently cooking: <span>{preparing.length}</span>
       </h3>
       <div className="overflow-x-auto">
         <table className="table">
@@ -18,22 +18,13 @@ const WantToCook = ({ wantToCook, handlePreparing }) => {
             </tr>
           </thead>
           <tbody>
-            {wantToCook.map((cook, idx) => (
+            {preparing.map((cook, idx) => (
               <tr className="hover:bg-gray-100" key={cook.id}>
                 <th>{idx + 1}</th>
                 <td>{cook.name} </td>
                 <td>{cook.preparing_time} minutes</td>
                 <td>{cook.calories} calories</td>
-                <th>
-                  <button
-                    onClick={() => {
-                      handlePreparing(cook);
-                    }}
-                    className="btn bg-[#0BE58A] border-none rounded-full hover:bg-[#0BE58A] px-6"
-                  >
-                    Preparing
-                  </button>
-                </th>
+                <th></th>
               </tr>
             ))}
           </tbody>
@@ -42,8 +33,7 @@ const WantToCook = ({ wantToCook, handlePreparing }) => {
     </>
   );
 };
-WantToCook.prototype = {
-  wantToCook: PropTypes.object.isRequired,
-  handlePreparing: PropTypes.func,
+Preparing.prototype = {
+  preparing: PropTypes.object.isRequired,
 };
-export default WantToCook;
+export default Preparing;

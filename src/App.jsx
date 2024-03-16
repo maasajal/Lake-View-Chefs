@@ -4,6 +4,7 @@ import Banner from "./components/Banner/Banner";
 import Header from "./components/Header/Header";
 import Recipes from "./components/Recipes/Recipes";
 import WantToCook from "./components/WantToCook/WantToCook";
+import Preparing from "./components/Preparing/Preparing";
 
 const App = () => {
   const [wantToCook, setWantToCook] = useState([]);
@@ -22,11 +23,12 @@ const App = () => {
       setShowToast(false);
     }
   };
-  const handlePreparing = (id, prepare) => {
+  const handlePreparing = (prepare) => {
     const newPrepare = [...preparing, prepare];
     setPreparing(newPrepare);
-    console.log(id);
-    const remainingRecipes = wantToCook.filter((cook) => cook.id !== id);
+    const remainingRecipes = wantToCook.filter(
+      (cook) => cook.id !== prepare.id
+    );
     setWantToCook(remainingRecipes);
   };
   return (
@@ -62,6 +64,7 @@ const App = () => {
                 </div>
               </div>
             )}
+            <Preparing preparing={preparing}></Preparing>
           </div>
         </section>
       </main>
