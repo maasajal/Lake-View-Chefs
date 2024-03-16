@@ -15,7 +15,7 @@ const Recipe = ({ recipe, handleWantToCook }) => {
         <p className="my-3">{description}</p>
         <div className="border-t-2 border-b-2 py-5">
           <h3 className="text-xl">
-            Ingredients <span>{ingredients.length}</span>
+            Ingredients: <span>{ingredients.length}</span>
           </h3>
           <ul>
             {ingredients.map((ingredient, idx) => (

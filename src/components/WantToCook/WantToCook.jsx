@@ -19,16 +19,12 @@ const WantToCook = ({ wantToCook }) => {
           </thead>
           <tbody>
             {wantToCook.map((cook, idx) => (
-              <tr className="hover:bg-gray-100">
+              <tr className="hover:bg-gray-100" key={cook.id}>
                 <th>{idx + 1}</th>
                 <td>{cook.name} </td>
-                <td>{cook.preparing_time} </td>
-                <td>{cook.calories} </td>
-                <th>
-                  <button className="btn bg-[#0BE58A] border-none rounded-full hover:bg-[#0BE58A] px-6">
-                    Preparing
-                  </button>
-                </th>
+                <td>{cook.preparing_time} minutes</td>
+                <td>{cook.calories} calories</td>
+                <th></th>
               </tr>
             ))}
           </tbody>

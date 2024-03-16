@@ -7,11 +7,27 @@ import WantToCook from "./components/WantToCook/WantToCook";
 
 const App = () => {
   const [wantToCook, setWantToCook] = useState([]);
+  const [preparing, setPreparing] = useState([]);
+  const [showToast, setShowToast] = useState(false);
 
   const handleWantToCook = (recipe) => {
-    const newCookItem = [...wantToCook, recipe];
-    setWantToCook(newCookItem);
-    console.log(wantToCook);
+    if (wantToCook.includes(recipe)) {
+      setShowToast(true);
+      setTimeout(() => {
+        setShowToast(false);
+      }, 3000);
+    } else {
+      const newCookItem = [...wantToCook, recipe];
+      setWantToCook(newCookItem);
+      setShowToast(false);
+    }
+  };
+  const handlePreparing = (id, prepare) => {
+    const newPrepare = [...preparing, prepare];
+    setPreparing(newPrepare);
+    console.log(id);
+    const remainingRecipes = wantToCook.filter((cook) => cook.id !== id);
+    setWantToCook(remainingRecipes);
   };
   return (
     <>
@@ -35,7 +51,17 @@ const App = () => {
             </div>
           </div>
           <div className="col-span-2 border rounded-xl py-5 text-center h-fit">
-            <WantToCook wantToCook={wantToCook}></WantToCook>
+            <WantToCook
+              wantToCook={wantToCook}
+              handlePreparing={handlePreparing}
+            ></WantToCook>
+            {showToast && (
+              <div className="toast toast-top toast-end">
+                <div className="alert alert-warning">
+                  <span>You already selected this!</span>
+                </div>
+              </div>
+            )}
           </div>
         </section>
       </main>
