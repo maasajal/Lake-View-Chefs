@@ -2,7 +2,7 @@ import { IoMdTime } from "react-icons/io";
 import { AiOutlineFire } from "react-icons/ai";
 import PropTypes from "prop-types";
 
-const Recipe = ({ recipe }) => {
+const Recipe = ({ recipe, handleWantToCook }) => {
   const { image, name, description, ingredients, preparing_time, calories } =
     recipe;
   return (
@@ -18,26 +18,28 @@ const Recipe = ({ recipe }) => {
             Ingredients <span>{ingredients.length}</span>
           </h3>
           <ul>
-            <li>{ingredients[0]}</li>
-            <li>{ingredients[1]}</li>
-            <li>{ingredients[2]}</li>
-            <li>{ingredients[3]}</li>
+            {ingredients.map((ingredient, idx) => (
+              <span key={idx}>
+                <li className="list-disc ml-6">{ingredient}</li>
+              </span>
+            ))}
           </ul>
         </div>
         <div className="flex my-5">
           <p className="flex items-center gap-2">
-            <IoMdTime />
-            <span>{preparing_time}</span>
-            <span>minutes</span>
+            <IoMdTime /> {preparing_time} minutes
           </p>
           <p className="flex items-center gap-2">
-            <AiOutlineFire />
-            <span>{calories}</span>
-            <span>calories</span>
+            <AiOutlineFire /> {calories} calories
           </p>
         </div>
         <div className="card-actions">
-          <button className="btn bg-[#0BE58A] border-none rounded-full hover:bg-[#0BE58A] px-6">
+          <button
+            onClick={() => {
+              handleWantToCook(recipe);
+            }}
+            className="btn bg-[#0BE58A] border-none rounded-full hover:bg-[#0BE58A] px-6"
+          >
             Want to Cook
           </button>
         </div>
@@ -47,5 +49,6 @@ const Recipe = ({ recipe }) => {
 };
 Recipe.prototype = {
   recipe: PropTypes.object.isRequired,
+  handleWantToCook: PropTypes.func,
 };
 export default Recipe;
