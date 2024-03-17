@@ -11,6 +11,7 @@ const App = () => {
   const [preparing, setPreparing] = useState([]);
   const [showToast, setShowToast] = useState(false);
   const [totalTime, setTotalTime] = useState(0);
+  const [totalCalories, setTotalCalories] = useState(0);
 
   const handleWantToCook = (recipe) => {
     if (wantToCook.includes(recipe)) {
@@ -32,7 +33,7 @@ const App = () => {
     );
     setWantToCook(remainingRecipes);
     setTotalTime(totalTime + prepare.preparing_time);
-    console.log(totalTime);
+    setTotalCalories(totalCalories + prepare.calories);
   };
   return (
     <>
@@ -67,7 +68,7 @@ const App = () => {
                 </div>
               </div>
             )}
-            <Preparing preparing={preparing} totalTime={totalTime}></Preparing>
+            <Preparing preparing={preparing} totalTime={totalTime} totalCalories={totalCalories}></Preparing>
           </div>
         </section>
       </main>
