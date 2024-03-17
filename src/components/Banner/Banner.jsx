@@ -14,7 +14,7 @@ const Banner = () => {
             <h1 className="mb-5 text-3xl lg:text-5xl font-bold text-white">
               Discover an exceptional cooking class tailored for you!
             </h1>
-            <p className="mb-5">
+            <p className="mb-5 leading-8">
               Experience culinary mastery with personalized cooking classes at
               Lake View Restaurant. Explore a world of flavors tailored to your
               taste buds, guided by expert chefs in a picturesque lakeside

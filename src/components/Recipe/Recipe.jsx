@@ -12,15 +12,15 @@ const Recipe = ({ recipe, handleWantToCook }) => {
       </figure>
       <div className="card-body">
         <h2 className="card-title">{name}</h2>
-        <p className="my-3">{description}</p>
+        <p className="my-3 leading-8">{description}</p>
         <div className="border-t-2 border-b-2 py-5">
-          <h3 className="text-xl">
+          <h3 className="text-xl mb-4">
             Ingredients: <span>{ingredients.length}</span>
           </h3>
           <ul>
             {ingredients.map((ingredient, idx) => (
               <span key={idx}>
-                <li className="list-disc ml-6">{ingredient}</li>
+                <li className="list-disc ml-6 leading-8">{ingredient}</li>
               </span>
             ))}
           </ul>

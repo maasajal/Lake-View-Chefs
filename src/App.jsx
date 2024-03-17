@@ -41,11 +41,11 @@ const App = () => {
       <header className="container mx-auto">
         <Header></Header>
       </header>
-      <main className="container mx-auto px-4 md:px-0 mb-12">
+      <main className="container mx-auto px-5 mb-12">
         <Banner></Banner>
         <div className="text-center mt-28">
           <h2 className="text-3xl font-bold">Our Recipes</h2>
-          <p className="py-6 max-w-3xl mx-auto">
+          <p className="py-6 max-w-3xl mx-auto leading-8">
             Dive into a treasure trove of culinary delights with Our Recipes.
             From mouthwatering mains to delectable desserts, discover a diverse
             collection of dishes to delight every palate and occasion.
