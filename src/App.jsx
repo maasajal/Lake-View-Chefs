@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Recipes from "./components/Recipes/Recipes";
 import WantToCook from "./components/WantToCook/WantToCook";
 import Preparing from "./components/Preparing/Preparing";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   const [wantToCook, setWantToCook] = useState([]);
@@ -40,7 +41,7 @@ const App = () => {
       <header className="container mx-auto">
         <Header></Header>
       </header>
-      <main className="container mx-auto px-4 md:px-0">
+      <main className="container mx-auto px-4 md:px-0 mb-12">
         <Banner></Banner>
         <div className="text-center mt-28">
           <h2 className="text-3xl font-bold">Our Recipes</h2>
@@ -68,10 +69,15 @@ const App = () => {
                 </div>
               </div>
             )}
-            <Preparing preparing={preparing} totalTime={totalTime} totalCalories={totalCalories}></Preparing>
+            <Preparing
+              preparing={preparing}
+              totalTime={totalTime}
+              totalCalories={totalCalories}
+            ></Preparing>
           </div>
         </section>
       </main>
+      <Footer></Footer>
     </>
   );
 };

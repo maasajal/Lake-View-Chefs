@@ -6,7 +6,7 @@ const Recipe = ({ recipe, handleWantToCook }) => {
   const { image, name, description, ingredients, preparing_time, calories } =
     recipe;
   return (
-    <div className="card bg-base-100 shadow-xl">
+    <div className="card bg-base-100 shadow-xl border">
       <figure className="px-5 pt-10">
         <img src={image} alt="Recipe photo" className="rounded-xl" />
       </figure>
