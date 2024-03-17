@@ -24,7 +24,7 @@ const Banner = () => {
               <button className="btn bg-[#0BE58A] border-none rounded-full hover:bg-[#0BE58A]">
                 Explore Now
               </button>
-              <button className="btn bg-transparent text-white rounded-full hover:bg-[#0BE58A] hover:text-black">
+              <button className="btn bg-transparent text-white rounded-full hover:bg-[#0BE58A] hover:text-black hover:border-none">
                 Our Feedback
               </button>
             </div>
