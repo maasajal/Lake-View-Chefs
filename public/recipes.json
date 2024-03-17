@@ -1,5 +1,18 @@
 [
   {
+    "image": "https://media.istockphoto.com/id/1059216948/fi/valokuva/spagettia-ja-amatricianaa.jpg?s=612x612&w=0&k=20&c=0MSd5L8lAQoNDhDZ8Ix6ujbUido1Nhb5p0YKUGq7nyY=",
+    "id": 0,
+    "name": "Spaghetti Bolognese",
+    "description": "Classic Italian pasta dish with savory meat sauce.",
+    "ingredients": [
+      "500g ground beef",
+      "1 onion, chopped",
+      "2 cloves garlic, minced"
+    ],
+    "preparing_time": 30,
+    "calories": 600
+  },
+  {
     "image": "https://plus.unsplash.com/premium_photo-1701109142414-cbcdca0efeb2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8U3BpY3klMjBDaGlja2VuJTIwRnJ5fGVufDB8fDB8fHww",
     "id": 1,
     "name": "Spicy Chicken Stir-Fry",
